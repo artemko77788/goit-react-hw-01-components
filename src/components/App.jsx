@@ -4,7 +4,7 @@ import Statistic from './Statistic';
 import data from './data/data';
 import FriendList from './Friends';
 import friends from './data/friends';
-import TransactionsList from './TransactionsList';
+import TransactionsList from './TransactionHistory';
 import transactions from './data/transactions';
 
 const App = () => {
@@ -24,9 +24,7 @@ const App = () => {
           tag={user.tag}
           location={user.location}
           avatar={user.avatar}
-          followers={user.stats.followers}
-          views={user.stats.views}
-          likes={user.stats.likes}
+          stats={user.stats}
         />
         <Statistic title="Upload stats" stats={data} />
 
@@ -36,7 +34,7 @@ const App = () => {
           items={transactions}
           type="Type"
           amount="Amount"
-          currency="Amount"
+          currency="Currency"
         />
       </div>
     </div>

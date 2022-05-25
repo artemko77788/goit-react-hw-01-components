@@ -1,4 +1,3 @@
-import { getQueriesForElement } from '@testing-library/react';
 import PropTypes from 'prop-types';
 import s from './FriendList.module.css';
 
@@ -25,10 +24,14 @@ function FriendList({ items }) {
 }
 
 FriendList.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  isOnline: PropTypes.bool,
-  id: PropTypes.number,
+  item: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default FriendList;
