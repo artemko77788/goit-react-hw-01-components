@@ -32,9 +32,9 @@ const App = () => {
 
         <TransactionsList
           items={transactions}
-          type="Type"
-          amount="Amount"
-          currency="Currency"
+          typeHeader="Type"
+          amountHeader="Amount"
+          currencyHeader="Currency"
         />
       </div>
     </div>
