@@ -10,7 +10,7 @@ function Profile({ username, tag, location, avatar, followers, views, likes }) {
         <p className={s.tag}>@{tag}</p>
         <p className={s.location}>{location}</p>
       </div>
-      <ul className={s.wrap}>
+      <ul className={s.stats}>
         <li className={s.list}>
           <span className={s.label}>Followers</span>
           <span className={s.quantity}>{followers}</span>
