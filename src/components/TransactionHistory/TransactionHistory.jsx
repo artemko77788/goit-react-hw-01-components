@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
+
 function TransactionHistory({
   typeHeader,
   amountHeader,

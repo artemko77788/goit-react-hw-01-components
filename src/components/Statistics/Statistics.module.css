@@ -1,20 +1,19 @@
-.title {
-  font-size: 20px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.3);
-  margin: 10px;
-}
-
 .statistics {
   background-color: white;
   width: 300px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.492);
-
   text-align: center;
   overflow: hidden;
   margin: 20px auto;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 10px;
 }
 
 .statList {
