@@ -6,16 +6,13 @@ function FriendList({ items }) {
   return (
     <ul className={s.friendList}>
       {items.map(item => {
-        const id = item.id;
-
         return (
-          <li key={id} className={s.item}>
-            <FriendListItem
-              avatar={item.avatar}
-              name={item.name}
-              isOnline={item.isOnline}
-            />
-          </li>
+          <FriendListItem
+            avatar={item.avatar}
+            name={item.name}
+            isOnline={item.isOnline}
+            id={item.id}
+          />
         );
       })}
     </ul>

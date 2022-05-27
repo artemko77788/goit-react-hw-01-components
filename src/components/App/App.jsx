@@ -4,7 +4,7 @@ import Statistic from '../Statistics';
 import data from '../../data/data';
 import FriendList from '../FriendList';
 import friends from '../../data/friends';
-import TransactionsList from '../TransactionHistory';
+import TransactionHistory from '../TransactionHistory';
 import transactions from '../../data/transactions';
 import s from './App.module.css';
 
@@ -20,7 +20,7 @@ const App = () => {
       />
       <Statistic title="Upload stats" stats={data} />
       <FriendList items={friends} />
-      <TransactionsList
+      <TransactionHistory
         items={transactions}
         typeHeader="Type"
         amountHeader="Amount"
